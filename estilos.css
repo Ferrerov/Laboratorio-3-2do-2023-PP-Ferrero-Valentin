@@ -1,0 +1,97 @@
+#fieldCampos
+{
+    background-color: grey !important;
+}
+#legendAbm
+{
+    text-transform: uppercase;
+    color: rgb(53, 53, 53) !important;
+    font-size: 40px;
+}
+
+table
+{
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+thead
+{
+    background-color: cadetblue !important;
+    text-align: center;
+}
+
+th, td
+{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+th
+{
+    text-transform: capitalize;
+}
+
+td
+{
+    text-align: center;
+}
+
+
+fieldset
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 50%;
+    margin: 0 auto;
+}
+
+label, input {
+    width: 100%; /* Hace que los labels e inputs ocupen todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-bottom: 10px; /* Agrega espacio entre los elementos si lo deseas */
+  }
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+
+.boton:hover
+{
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+body
+{
+    background-color: #ffffff;
+    background-image:  linear-gradient(30deg, #b1b1b1 12%, transparent 12.5%, transparent 87%, #b1b1b1 87.5%, #b1b1b1), linear-gradient(150deg, #b1b1b1 12%, transparent 12.5%, transparent 87%, #b1b1b1 87.5%, #b1b1b1), linear-gradient(30deg, #b1b1b1 12%, transparent 12.5%, transparent 87%, #b1b1b1 87.5%, #b1b1b1), linear-gradient(150deg, #b1b1b1 12%, transparent 12.5%, transparent 87%, #b1b1b1 87.5%, #b1b1b1), linear-gradient(60deg, #b1b1b177 25%, transparent 25.5%, transparent 75%, #b1b1b177 75%, #b1b1b177), linear-gradient(60deg, #b1b1b177 25%, transparent 25.5%, transparent 75%, #b1b1b177 75%, #b1b1b177);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+label {
+    cursor: pointer;
+    color: white !important;
+    display: block;
+    margin: 3px;
+}

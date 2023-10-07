@@ -1,0 +1,75 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./Script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>LABO III - PP - VALENTIN FERRERO</h1>
+    </header>
+    <section id="seccionForm">
+        <form id="formAbm">
+            <fieldset id="fieldCampos">
+                <legend id="legendAbm">Formulario ABM</legend>
+                <p>
+                <label for="txtId" id="lblId">Id:</label>
+                <input type="text" id="txtId" name="id" value="" disabled>
+                </p>
+                <p>
+                <label for="txtModelo" id="lblModelo">Modelo:</label>
+                <input type="text" id="txtModelo" name="modelo" value="" placeholder="Modelo" required>
+                </p>
+                <p>
+                <label for="txtAnoFab" id="lblAnoFab">Año de Fabricacion:</label>
+                <input type="number" id="txtAnoFab" name="anoFab" value="" min="1885" placeholder="Año de fabricacion" required>
+                </p> 
+                <p>
+                <label for="txtVelMax" id="lblVelMax">Velocidad maxima:</label>
+                <input type="number" id="txtVelMax" name="velMax" value="" min="1" placeholder="Velocidad maxima" required>
+                </p>
+                <p>
+                    <label for="slcTipo" id="lblTipo">Tipo:</label>
+                    <select id="slcTipo" class="tipoVehiculo" name="tipoVehiculo"  class="field" required >
+                        <option value="" disabled selected hidden>Seleccione un tipo</option>
+                        <option value="Aereo">Aereo</option>
+                        <option value="Terrestre">Terrestre</option>
+                    </select>
+                </p>
+                <div id="fieldAereo" hidden>
+                    <p>
+                        <label for="txtAltMax" id="lblAltMax">Altura maxima:</label>
+                        <input id="txtAltMax" type="number" name="txtAltMax" placeholder="Altura maxima" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtAutonomia" id="lblAutonomia">Autonomia:</label>
+                        <input id="txtAutonomia" type="number" name="txtAutonomia" placeholder="Autonomia" class="field" >
+                    </p>
+                </div>
+                <div id="fieldTerrestre" hidden>
+                    <p>
+                        <label for="txtCantPue" id="lblCantPue">Cantidad de puertas:</label>
+                        <input id="txtCantPue" type="number" name="txtCantPue" placeholder="Cantidad de puertas" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtCantRue" id="lblCantRue">Cantidad de ruedas:</label>
+                        <input id="txtCantRue" type="number" name="txtCantRue" placeholder="Cantidad de puertas" class="field" >
+                    </p>
+                </div>
+            </fieldset>
+            <p id="botones">
+                <input type="submit" value="Guardar" class="boton">
+                <input type= "button" id="btnEliminar" value="Eliminar" class="boton">
+            </p>
+        </form>
+    </section>
+    <section id="seccionTable">
+        <p>
+            
+        </p>
+    </section>
+</body>
+</html></html>
