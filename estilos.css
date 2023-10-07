@@ -51,9 +51,9 @@ fieldset
 }
 
 label, input {
-    width: 100%; /* Hace que los labels e inputs ocupen todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    margin-bottom: 10px; /* Agrega espacio entre los elementos si lo deseas */
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
   }
 
 .boton {
